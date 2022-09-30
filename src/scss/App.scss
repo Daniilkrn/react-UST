@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Inter+Tight:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Inter+Tight:wght@600&family=Roboto:ital@1&display=swap');
+* {
+    margin: 0;
+    border: none;
+}
+
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    border: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+main {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .main_container {
+        width: 100%;
+    }
+        .firstBlock{
+            width: 100%;
+            min-height: 1084px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .about_us {
+            min-height: 1100px;
+        }    
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    position: fixed;
+    .header__container {
+        justify-content: space-between;
+    }
+    .logo_container {
+        display: flex;
+        flex-direction: row;
+        .desc-logo {
+            text-align: left;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            h3 {
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 29px;
+                color: #DDDDE2;
+            }
+            h4 {
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 18px;
+                color: #989AA9;
+            }
+        }    
+    }
+    .links {
+        display: flex;
+        flex-direction: row;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 325;
+        font-size: 18px;
+        line-height: 19px;
+        letter-spacing: 0.02em;
+        justify-content: center;
+        align-items: center;
+        .link:not(:last-child) {
+            margin-right: 16px;
+            color: #DDDDE2;
+        }
+        .link:not(:first-child) {
+            margin-left: 16px;
+            color: #DDDDE2;
+        }
+        span {
+            display: block;
+            border: 1px solid #989AA9;
+        }
+    }
+    .nav_link {
+        display: flex;
+        flex-direction: row;
+        padding-right: 24px;
+    }
+    .search_lang-bar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .span-search_lang-bar {
+            border: 2px solid #989AA9;
+            width: 50px;
+            transform: rotate(90deg);
+            display: block;
+        }
+            .search {
+                margin-left: 22px;
+                color: #DDDDE2;
+            }
+            .language {
+                margin-right:0px;
+                color: #DDDDE2;
+            }
+    }
+}
+
+footer {
+    width: 100%;
+    background: #03115F;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    .footer__container {
+        display: flex;
+       justify-content: space-between;
+        align-items:flex-start;
+        margin-bottom: 22px;
+        font-family: Inter;
+    }
+    .footer_content {
+       display: flex;
+    }
+    .teams {
+        display: flex;
+        flex-direction: row;
+    }
+        .russian_team {
+            text-align: left;
+            margin-top: 64px;
+            margin-right: 140px;
+        }
+            .li_team:not(:first-child) {
+                margin-top: 16px;
+                color: #F0F0F1;;
+                font-family: 'Roboto';
+            }
+            .li_team:first-child {
+               
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                text-transform: uppercase;
+                color: #F0F0F1;
+            }
+            .li_team {
+                white-space:nowrap;
+            }
+
+            .li_team:last-child {
+                margin-top: 72px;
+            }
+
+        .slovak_team{
+            margin-top: 64px;
+            text-align: left;
+        }
+
+        .conf_political {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            font-weight: 325;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            padding-top: 72px;
+            margin-left: 100px;
+        }  
+            ul {
+                display: flex;
+                flex-direction: column;
+                
+            }
+            ul:not(:last-child){
+                margin-right: 140px;
+            }
+            .link{
+                color: #E0E1E3;
+                font-style: normal;
+                font-weight: 325;
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+                text-align: left;
+                margin-top: 16px;
+            }
+            .link:first-child {
+                margin-top: 0;
+            }
+            .conf_li {
+                color: #E0E1E3;
+                font-style: normal;
+                font-weight: 325;
+                font-size: 16px;
+                line-height: 19px;
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+                text-align: left;
+            }
+            .conf_li:not(:first-child){
+                margin-top: 16px;
+            }
+            .li_down {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                white-space:nowrap;
+               
+                span {
+                    display: block;
+                    width: 14px;
+                    height: 0px;
+                    border: 1px solid #A3A4AB;
+                    transform: rotate(-90deg);
+                }
+            }
+}
+
+
+[class*="__container"]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1440px;
+}
+
+.layout_wrapper {
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__container {
+    justify-content: space-between;
+}
+
+.NFP {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    .goHome_link {
+        margin-top: 50px;
+        color: #03115F;
+    }
+    .goHome_link:hover{
+        color: #A3A4AB;
+    }
+}

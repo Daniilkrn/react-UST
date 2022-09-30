@@ -1,0 +1,31 @@
+
+import Layout from './Components/layout';
+import './scss/App.scss'
+import {Route,Routes} from 'react-router-dom'
+import Team from './Components/team/Team';
+import HomePage from './Components/Header/header';
+import Serv from './Components/Serv/Serv';
+import Contacts from './Components/Contacts/contacts';
+import Portfolio from './Components/Portfolio/portfolio';
+import Career from './Components/Career/Career';
+import NotFoundPage from './Components/NFP/notFoundPage';
+
+function App() {
+  return (
+    <div className="App">
+      <Routes>
+        <Route path="/" element={<Layout/>}>
+          <Route index element={<HomePage/>}></Route>
+          <Route path="/team" element={<Team/>}></Route>
+          <Route path="/services" element={<Serv/>}></Route>
+          <Route path="/portfolio" element={<Portfolio/>}></Route>
+          <Route path="/career" element={<Career/>}></Route>
+          <Route path="/contacts" element={<Contacts/>}></Route>
+          <Route path='*' element={<NotFoundPage/>}></Route>
+        </Route>
+      </Routes>
+    </div>
+  );
+}
+
+export default App;
