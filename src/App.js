@@ -1,9 +1,10 @@
 
 import Layout from './Components/layout';
 import './scss/App.scss'
+import '../src/scss/HomePage.scss'
 import {Route,Routes} from 'react-router-dom'
 import Team from './Components/team/Team';
-import HomePage from './Components/Header/header';
+import HomePage from './Components/HomePage/HomePage'
 import Serv from './Components/Serv/Serv';
 import Contacts from './Components/Contacts/contacts';
 import Portfolio from './Components/Portfolio/portfolio';

@@ -4,6 +4,7 @@
 * {
     margin: 0;
     border: none;
+    padding: 0;
 }
 
 body {
@@ -46,10 +47,13 @@ main {
 }
 
 header {
+    // background: url(../images/bgplanet_background.svg) no-repeat ;
+    background-color: #000000;
     width: 100%;
     display: flex;
     justify-content: center; 
     position: fixed;
+    z-index: 100;
     .header__container {
         justify-content: space-between;
     }
@@ -249,7 +253,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1440px;
+    width: 1440px; 
 }
 
 .layout_wrapper {

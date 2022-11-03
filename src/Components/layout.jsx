@@ -41,15 +41,6 @@ const Layout = () => {
                 </div>
             </header>
             <main>
-                {/* <div className="main_container">
-                    
-                    <div className="firstBlock">
-                        
-                    </div>
-                    <div className="about_us">
-                        www
-                    </div>
-                </div> */}
                 <Outlet />
             </main>
             <footer>
