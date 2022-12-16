@@ -33,7 +33,8 @@ const Clients = () => {
                     }
                     {
                         clientR.map(client=>
-                            <ClientItem client = {client} key = {client.id} clientImage = {client.clientImage}/>).reverse()
+                            <ClientItem client = {client} key = {client.id} clientImage = {client.clientImage}/>
+                        ).reverse()
                     }
                 </div>
             </div>

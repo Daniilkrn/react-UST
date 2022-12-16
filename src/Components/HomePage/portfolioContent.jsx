@@ -6,8 +6,6 @@ import picPortfolio5 from '../../images/picPortfolio5.svg'
 // import picPortfolio6 from '../../images/picPortfolio6.svg'
 import picPortfolio21 from '../../images/picPortfolio21.svg'
 
-import { Link } from 'react-router-dom'
-
 const PortfolioContent = () => {
     return (
         <div className="portfolio_content">
@@ -40,12 +38,6 @@ const PortfolioContent = () => {
                 <img src={picPortfolio21} alt="" />
                 <li>Актуаль</li>
                 <li>Сайт промом игры</li>
-            </div>
-            <div className="content btn_portfolio item7">
-                <Link to="/portfolio">Заказать проект</Link>
-            </div>
-            <div className="content btn_portfolio item8">
-                <Link to="/portfolio">Портфолио</Link>
             </div>
         </div>
     )

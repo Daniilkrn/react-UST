@@ -3,49 +3,63 @@ import {Link,Outlet} from 'react-router-dom'
 import {BsSearch} from 'react-icons/bs'
 import {MdOutlineLanguage} from 'react-icons/md'
 import svgUnion from '../images/ImageUnion.svg'
+import BurgerMenu from "./Header/media/burgerMenu";
+import { useState } from "react";
+import BurgerMenuList from "./Header/media/burgerMenuList";
 
 const Layout = () => {
+   
+    // const [visibleLinks, setVisibleLinks] = useState(true)
+
+    // const displayRef  = useRef()
+    const [itemsMenuDesktop, ] = useState([       
+        {value: 'Главная', linkTo: '/',id:1},
+        {value: 'Команда', linkTo: '/team',id:2},
+        {value: 'Услуги', linkTo: '/services',id:3},
+        {value: 'Карьера', linkTo: '/career',id:4},
+        {value: 'Портфолио', linkTo: '/portfolio',id:5},
+        {value: 'Контакты', linkTo: '/contacts',id:6},
+    ])
+
     return (
         <div className="layout_wrapper">
             <header>
                 <div className="header__container">
-                    <div className="logo_container">
-                        <div className="union_icon">
-                           <img src={svgUnion} alt="" />
+                    <Link to="/services" className="logoLink">
+                        <div className="logo_container">
+                            <div className="union_icon">
+                            <img src={svgUnion} alt="" />
+                            </div>
+                            <div className="desc-logo">
+                                <h3>Union Smart Technology</h3>
+                                <h4>Simple solutions for complex problems</h4>
+                            </div>
                         </div>
-                        <div className="desc-logo">
-                            <h3>Union Smart Technology</h3>
-                            <h4>Simple solutions for complex problems</h4>
-                        </div>
+                    </Link>
+                    <div className="nav_link">
+                            <div className="menu">
+                                {
+                                    itemsMenuDesktop.map(item => <Link to={item.linkTo} key={item.id} className="link">{item.value}</Link>) 
+                                }
+                                {
+                                    itemsMenuDesktop.map(itemSpan => <span key={itemSpan.id}></span>)
+                                }
+                            </div>
+                            <div className="search_lang-bar">
+                                <MdOutlineLanguage size={32} color="#989AA9" className="language"/>
+                                <span className="span-search_lang-bar"></span>
+                                <BsSearch size={26} color="#989AA9" cla1ssName="search"/>
+                            </div>
                     </div>
-                    <div className="links">
-                        <div className="nav_link">
-                            <Link to='/' className="link">Главная</Link>
-                                <span className="span"></span>
-                            <Link to='/team' className="link">Команда</Link>
-                                <span className="span"></span>
-                            <Link to='/services' className="link">Услуги</Link>
-                                <span className="span"></span>
-                            <Link to='/career' className="link">Карьера</Link>
-                                <span className="span"></span>
-                            <Link to='/portfolio' className="link">Портфолио</Link>
-                                <span className="span"></span>
-                            <Link to='/contacts' className="link">Контакты</Link>
-                        </div>
-                        <div className="search_lang-bar">
-                            <MdOutlineLanguage size={32} color="#989AA9" className="language"/>
-                        <span className="span-search_lang-bar"></span>
-                            <BsSearch size={26} color="#989AA9" cla1ssName="search"/>
-                        </div>
-                    </div>
+                    <BurgerMenu/>
                 </div>
             </header>
             <main>
                 <Outlet />
+
             </main>
             <footer>
                 <div className="footer__container">
-                   
                         <div className="teams">
                             <div className="russian_team">
                                 <li className="li_team">Российская команда</li>
@@ -80,7 +94,6 @@ const Layout = () => {
                                 <Link to='/' className="link">linkedin</Link>
                             </ul>
                         </div>
-                    
                 </div>
             </footer>
         </div>

@@ -1,0 +1,747 @@
+@media (max-width: 1640px){
+    .content{
+        padding: 0 !important;
+        .content_block{
+            ul{
+                padding-left: 0 !important;
+            }
+        }
+    }
+    .homePage_background{
+        .desc__container{
+            max-width: 100%;
+            .benefits_home__container{
+                max-width: 100%;
+                flex-wrap: wrap;
+                .benefits_item{
+                    margin: 40px;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1550px) {
+    .homePage_background{
+        .desc__container{
+            .div{
+                li{
+                    padding: 0px 10px;
+                }
+                .btn_home{
+                    padding: 0px 10px;
+                }
+            }
+            .benefits_home__container{
+                max-width: 100%;
+                flex-wrap: wrap;
+                .benefits_item{
+                    margin: 20px;
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .inoBlock_Wrapper{
+        .info_block__container{
+            max-width: 100%;
+            .desc_infoBlock{
+                max-width: 100%;
+            }
+        }
+        .content{
+            width: 100%;
+            flex-direction: column !important;
+            .info_img{
+                img{
+                    max-width: 100%;
+                } 
+            }
+        }
+    }
+    .portfolio_content {
+        display: grid;     
+        text-align: center;
+        width: 768px;
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        grid-template-columns: 1fr;
+        gap: 0px 0px; 
+        .content{
+            margin-bottom: 80px;
+            text-align: center;
+            &.item5{
+                display: none;
+            }
+            &.item6{
+                display: none;
+            }
+            img{
+                width: 70%;
+            }
+        }
+    }
+    .btn_portfolio__container{
+        margin-bottom: 40px;
+        flex-direction: column;
+        a{  
+            padding: 8px 16px !important;
+            margin-right: 0 !important;
+        }
+        a:last-child{
+            margin-top: 40px;
+        }
+    }
+    .clients_wrapper{
+        .clients__container{
+            .clients_content{  
+                .client_item{
+                    width: 25%;
+                }
+            }
+        }
+    }
+    .contactBlock_wrapper{
+        .contact_bg__container{
+            max-width: 1230px;
+        }
+    }
+}
+
+@media (max-width: 1230px) {
+    .footer__container{
+        max-width: 1100px;
+        flex-direction: column;
+        .conf_political{
+            margin-left: 0;
+            margin-top: 64px;
+            padding-left: 0;
+        }
+        .teams{
+            .russian_team{
+                margin-right: 30px;
+            }
+        }
+    }
+    .homePage_background{
+        .desc__container{
+            .benefits_home__container{
+                .benefits_item{
+                    padding: 0;
+                    white-space: normal;
+                    margin: 20px;
+                }
+            }
+        }
+    }
+    .inoBlock_Wrapper{
+        .info_block__container{
+            max-width: 100%;
+            .desc_infoBlock{
+                max-width: 100%;
+            }
+        }
+    }
+    .benefits_Wrapper{
+        .benefits_content{
+            justify-content: center;
+            .content_item{
+                text-align: center;
+                min-width: 360px;
+                padding: 20px;
+                margin: 12px;
+                .img_benefits{
+                    justify-content: center;
+                }
+                li:nth-child(3){
+                    text-align: center;    
+                }
+            }
+        }
+    }
+    .contactBlock_wrapper{
+        .contact_bg__container{
+            max-width: 100%;
+        }
+    }
+    .clients_wrapper{
+        .clients__container{
+            .clients_content{  
+                .client_item{
+                    width: 50%;
+                    margin: 40px 0px;
+                }
+            }
+        }
+    }
+    .content_wrapper {
+        .contactBlock_container{
+            display: flex;
+        }
+        .contactBlock_content{
+            flex-direction: column !important;
+            max-width: 100% !important;
+                .contact_Do{
+                    width: 100% !important;
+                    .square_contactDo{
+                    }
+                }
+                .square_content{
+                    display: flex;
+                    justify-content: center;
+                    width: 100% !important;
+                    max-width: 100%;
+                    .square{
+                        margin: 0px 20px;
+                        max-width: 100%;
+                        li {
+                            padding: 10px;
+                        }
+                        .social{
+                            padding-top: 20px;
+                            justify-content: center;
+                        }
+                    }
+                }
+        }
+    }
+}
+
+@media (min-width: 1100px){
+    .header__container{
+        .burger_menu_list {
+            display: none; 
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .homePage_background{
+        .desc__container{
+            max-width: 100%;
+            .benefits_home__container{
+                min-width: 100%;
+                padding: 20px 0px;
+                background-color: #03115F;
+                .benefits_item{
+                        margin: 12px;
+                        padding: 0;
+                        width: 33.3333%;
+                        li:last-child{
+                        white-space: normal;
+                        line-height: 24px;
+                        }
+                }
+            }
+        }
+    }
+    .inoBlock_Wrapper{
+        .info_block__container{
+            max-width: 100%;
+            .desc_infoBlock{
+                max-width: 100%;
+            }
+        }
+    }
+    .suggestions_block__container{
+        justify-content: center;
+        .suggestions_content {
+            justify-content: space-between;
+            width: 100%;
+            .suggestions {
+                padding: 20px;
+            }
+        }
+    }
+    .header__container{
+        .nav_link{
+            display: none;
+        }
+        .burger_menu_list {
+            position: fixed !important;
+            .burger_nav_link{
+            }
+            cursor: auto;
+        }
+        .burger_menu_list.modal{
+            height: 350vh;
+            .burgers_nav_link{
+                a:first-child{
+                    margin-top: 0;
+                }
+            }
+            .close_container{
+                margin-top: 6px;
+                margin-bottom: 20px;
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                .close{
+                    span{
+                        position: relative;
+                        top: 30px;
+                        left: -13px;
+                    }
+                }
+            }
+        }
+        .close {
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            span{
+                position: relative; 
+                width: 30px;
+                height: 30px;
+                left: 0;
+                top: 0px;
+            }
+            span::before{
+                position: absolute;
+                content: '';
+                width: 28px;
+                height: 2px;
+                bottom: 10px;
+                left: 0;
+                background-color: #000000;
+                transform: rotate(45deg);
+            }
+            span::after{
+                content: '';
+                position: absolute;
+                width: 28px;
+                height: 2px;
+                top: -12px;
+                left: 0;
+                background-color: #000000;
+                transform: rotate(-45deg);
+            }
+        }
+        width: 768px;
+        justify-content: space-between;
+        .burger_btn{
+            cursor: pointer;
+            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.7em;
+            min-height: 60px;
+            padding: 0px 18px;
+            .btn_span{
+                width: 30px;
+                position: relative;
+                display: flex;
+                justify-content: center;   
+                background-color: #ffffff; 
+                height: 2px;
+                width: 24px;            
+                top: 0;
+                left: 0;
+            }
+            .btn_span::before{
+                position: absolute;
+                content: '';
+                width: 24px;
+                height: 2px;
+                bottom: 10px;
+                left: 0;
+                background-color: #f5f3f3;
+            }
+            .btn_span::after{
+                content: '';
+                position: absolute;
+                width: 24px;
+                height: 2px;
+                top: 10px;
+                left: 0;
+                background-color: #ffffff;
+            }
+        }  
+    }
+    .contactBlock_wrapper{
+        .contact_bg__container{
+            max-width: 768px;
+        }
+    }
+    .footer__container{
+        .teams{
+            .russian_team{
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .header__container{
+        .search_lang-bar{
+            display: none;
+        }
+        .logoLink{
+            width: 50%;
+            .logo_container{
+                font-size: calc(12px + 12 * (100vw / 1440));
+                .desc_logo{
+                    font-size: 16px;
+                }
+            }
+        }
+        .burger_btn .burger_menu_list{
+            min-height: 100vh;
+            width: 100%;
+            padding: 0;
+            .burgers_nav_link{
+                .close{
+                    margin-top: 40px;
+                }
+                a{
+                    margin: 20px 60px;
+                }
+            }
+        }
+        .burger_menu_list.modal{
+            height: 100vh !important;
+            top: 0;
+            .burgers_nav_link{
+                a{
+                    margin-bottom: 46px;
+                }
+            }
+            .close_container{
+                max-width: 95%;
+                padding: 10px;
+                margin-right: 20px;
+                .close{
+                    span{
+                    }
+                }
+            }
+        }
+    }
+    .inoBlock_Wrapper{
+        .info_block__container{
+            max-width: 100%;
+            .desc_infoBlock{
+                max-width: 100%;
+            }
+        }
+    }
+    .footer__container{
+        flex-wrap: wrap;
+    }
+    .clients_wrapper{
+        .clients__container{
+            max-width: 768px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .clients_content{  
+                .clients_item{
+                    width: 50%;
+                }
+            }
+        }
+    }
+    .footer__container{
+        .conf_political{
+            ul{
+                margin-right: 30px;
+            }
+        }
+    }
+    .benefits_Wrapper{
+        .benefits_content{
+            .content_item{
+                min-width: auto;
+                padding: 20px;
+                margin: 12px;
+                .img_benefits{
+                }
+                li:nth-child(3){
+                    text-align: left;    
+                }
+            }
+        }
+    }
+    .portfolio__container {
+        .btn_portfolio__container{
+            max-width: 100%;
+            a{
+                width: 84% !important;
+            }
+        }
+        .portfolio_content{
+            justify-content: center;
+            .content{
+                img{
+                    width: auto;
+                }
+            }
+        }
+        .portfolioDesc_content {
+            padding-bottom: 64px;
+            li{
+                text-align: left !important;
+            }
+            li:nth-child(2){
+                font-size: calc(36px + 40 * (100vw / 1440));
+            }
+        }
+    }
+    .suggestions_block__container{
+        .suggestions{
+            img{
+                width: 100%;
+                height: auto;
+                align-self: center;
+            }
+            align-items: center;
+        }
+    }
+    .contactBlock_wrapper{
+        .contact_bg__container{
+            max-width: 560px;
+        }
+    }
+    .content_wrapper {
+        bottom: 0;
+        .contactBlock_content{
+            max-width: 100%;
+                .contact_Do{
+                    max-width: 100%;
+                    .square_contactDo{
+                        width: 80%;
+                        max-width: none;
+                        .button_container{
+                            li{ 
+                                display: flex;
+                                align-items: center;
+                                width: 90%;
+                                max-width: none;
+                                text-align: center;
+                                background-color: #EEEFF1;
+                                border-radius: 4px;
+                                height: 100%;
+                            }
+                        }
+                        .input_container{
+                            width: 100%;
+                            max-width: none;
+                            label {
+                                width: 90%;
+                                max-width: none;
+                                input{
+                                    min-width: auto !important;
+                                    width: 100%;
+                                    max-width: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                .square_content{
+                    font-size: calc(2px + 12 * (100vw / 768));
+                    width: 100% !important;
+                    max-width: none;
+                    .square{
+                        .contact_countries{
+                            flex-wrap: wrap;
+                        }
+                    }
+                }
+        }
+    }
+}
+@media (max-width: 560px) {
+    .header__container{
+        .logoLink{
+            width: 75% !important;
+            .logo_container{
+                font-size: calc(12px + 12 * (100vw / 1440));
+                .desc_logo{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .homePage_background{
+        .desc__container{
+            .div{
+                li{
+                    font-size: calc(16px + 44 * (100vw / 560));  
+                }
+                .desc_li{
+                    font-size: calc(12px + 8 * (100vw / 560));
+                }
+                .btn_home{  
+                    display: flex;
+                    justify-content: center;
+                    padding: 0;
+                    a{
+                        border-radius: 8px;
+                        width: 85%;
+                    }
+                }
+            }
+            max-width: 100%;
+            .benefits_home__container{
+                .benefits_item{
+                    width: 100%;
+                    margin-bottom: 28px;
+                }
+            }
+        }
+    }
+    .inoBlock_Wrapper{
+        .info_block__container{
+            padding-top: 90px;
+            .content{
+                .content_block{
+                    ul{
+                        li:first-child{
+                                font-size: 26px;
+                        }
+                    }  
+                    .buttons_container a:first-child{
+                            display: none;
+                    }
+                }
+            }
+            max-width: 100%;
+            .desc_infoBlock{
+                max-width: 100%;
+            }
+        }
+    }
+    .suggestions_block__container{
+        margin-top: 90px;
+        .suggestions_content {
+            justify-content: space-between;
+            .suggestions {
+                padding: 50px 0px;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+    .clients_wrapper{
+        .clients__container{
+            .clients_desc li{
+                font-size: calc(16px + 38 * (100vw / 560));
+            }
+            .clients_content{  
+                .client_item{
+                    width: 100%;
+                }
+            }
+            .client_item:nth-child(7),.client_item:nth-child(8),
+            .client_item:nth-child(9),.client_item:nth-child(10),
+            .client_item:nth-child(11),.client_item:nth-child(12){
+                display: none;
+            }
+        }
+    }
+    .benefits_Wrapper .benefits__container{
+        max-width: 100%;
+        .benefits_desc{
+            width: 100%;
+            li:nth-child(2){
+                max-width: 100%;
+                font-size: calc(16px + 38 * (100vw / 560));    
+            }
+        }
+    } 
+    .portfolio__container {
+        .portfolioDesc_content {
+            height: 840px;
+            padding-bottom: 0px;
+        }
+    }
+    .square_contactDo{
+        input{
+            width: 100%;
+        }
+    } 
+    .footer__container{
+        .teams{
+            display: flex;
+            flex-direction: column;
+        }
+        .conf_political{
+            display: flex;
+            flex-direction: column !important;
+            ul{
+                margin-bottom: 50px;
+                a{
+                    font-size: 20px !important;
+                }
+                width: 100% !important;  
+            }
+        }
+    }
+    .contactBlock_wrapper{
+        .contact_bg__container{
+            justify-content: center !important;
+            max-width: auto;
+            li{
+                font-size: calc(16px + 18 * (100vw / 560)) !important;    
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                align-self: center;
+            }
+        }
+    }
+    .content_wrapper {
+        .contactBlock_content{
+            max-width: 100%;
+            grid-template-columns: 1fr !important;
+                .contact_Do{
+                    max-width: 100%;
+                    .square_contactDo{
+                        .square{
+                            
+                        }
+                        max-width: none;
+                        p:first-child{
+                            display: none;
+                        }
+                        .button_container{
+                            flex-direction: column-reverse;
+                            li{ 
+                                justify-content: center;
+                                width: 90%;
+                                margin-bottom: 20px;
+                                text-align: center;
+                                background-color: #cbcdd1 !important;
+                                color: #989AA9;
+                                border-radius: 4px;
+                            }
+                            button{
+                                border-radius: 8px;
+                                width: 90%;
+                                margin-right: 0;
+                            }
+                        }
+                        .input_container{
+                           
+                            width: 100%;
+                            label {
+                                width: 90%;
+                                input{
+                                    min-width: auto !important;
+                                }
+                            }  
+                        }
+                    }
+                    padding-top: 0 !important;
+                }
+                .square_content{
+                    width: 100% !important;
+                    .square{
+
+                    }
+                }
+        }
+    }
+}

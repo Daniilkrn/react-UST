@@ -43,13 +43,13 @@ const BgContactBlock = () => {
                             <p>Связаться с нами</p>
                             <p>Оставьте свою контактную информацию, и мы <br/> с радостью свяжемся с вами!</p>
                             <div className="input_container">
-                                <label htmlFor=""><input type="text" placeholder="Имя "/></label>
-                                <label htmlFor=""><input type="text" placeholder="Компания "/></label>
-                                <label htmlFor=""><input type="e-mail" placeholder="Электронная почта "/></label>
-                                <label htmlFor=""><input type="text" placeholder="Сообщение"/></label>
+                                <label><input type="text" placeholder="Имя "/></label>
+                                <label><input type="text" placeholder="Компания "/></label>
+                                <label><input type="e-mail" placeholder="Электронная почта "/></label>
+                                {/* <label><input type="text" placeholder="Сообщение"/></label> */}
+                                <label><textarea placeholder="Cообщение"></textarea></label>
                                 <p> обязательные поля для заполнения</p>
                             </div>
-                            
                             <div className="button_container">
                                 <button type="submit">Отправить</button>
                                 <li>Нажимая на кнопку, вы соглашаетесь <br/> с Политикой конфидециальности</li>

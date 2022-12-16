@@ -7,9 +7,11 @@ const DescHomePage = () => {
                     <li>Студия разработки <br></br>программного обеспечения <br></br></li>
                     <li className="blue_li">с продуктовым мышлением</li>
                     <li className="desc_li">Мы создаем кроссплатформенные мобильные <br></br>приложения и веб-платформы и находим для них<br></br> лучшие решения.</li>
-                    <Link to='' className="btn">Заказать проект</Link>
+                    <div className="btn_home">
+                        <Link to='' className="btn">Заказать проект</Link>
+                    </div>
                 </div>
-                <div className="benefits_container">
+                <div className="benefits_home__container">
                     <div className="benefits_item">
                         <li className="benefits_li">4+</li>
                         <li className="benefits_li">Год опыта</li>
