@@ -1,4 +1,4 @@
-# адаптивное SPA приложение по макету https://www.figma.com/file/H2kadrELdhZNtSd9YuAcsk/UST?t=VAqez1hNLWRSJkIs-0
+# Адаптивное SPA приложение по макету https://www.figma.com/file/H2kadrELdhZNtSd9YuAcsk/UST?t=VAqez1hNLWRSJkIs-0
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
