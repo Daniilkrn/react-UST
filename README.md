@@ -1,5 +1,7 @@
 # Адаптивное SPA приложение по макету https://www.figma.com/file/H2kadrELdhZNtSd9YuAcsk/UST?t=VAqez1hNLWRSJkIs-0
 
+# https://daniilkrn.github.io/react-UST/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
