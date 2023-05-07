@@ -1,9 +1,7 @@
 import { useState } from 'react'
 import ClientItem from './ClientItem/clientItem.jsx'
-
 import clientIcon1 from '../../images/clients1.svg'
 import clientIcon2 from '../../images/clients2.svg'
-import clientIcon3 from '../../images/clients3.svg'
 import clientIcon4 from '../../images/clients4.svg'
 import clientIcon5 from '../../images/clients5.svg'
 

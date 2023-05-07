@@ -3,10 +3,7 @@ import BurgerMenuList from "./burgerMenuList"
 
 const BurgerMenu = ({}) => {
     const [visibleBurger,setVisibleMenu] = useState(false)
-    const [isScroll, setIsScroll] = useState(false)
-    if(visibleBurger){
-        
-    }
+    const [, setIsScroll] = useState(false)
 
     return (
         <div className="burger_btn" onClick={()=>{

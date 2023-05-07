@@ -1,6 +1,11 @@
-const Close = ({visibleBurger,setVisibleMenu}) => { 
+const Close = ({visibleBurger,setVisibleMenu}) => {
+    
+    function handlerSetMenu(){
+        setVisibleMenu(!visibleBurger)
+    }
+
     return (
-        <div className="close" onClick={()=>setVisibleMenu(!visibleBurger)}>
+        <div className="close" onClick={()=>handlerSetMenu()}>
             <span></span>
         </div>
     )

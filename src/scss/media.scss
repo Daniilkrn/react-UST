@@ -183,8 +183,6 @@
             max-width: 100% !important;
                 .contact_Do{
                     width: 100% !important;
-                    .square_contactDo{
-                    }
                 }
                 .square_content{
                     display: flex;
@@ -207,14 +205,6 @@
     }
 }
 
-@media (min-width: 1100px){
-    .header__container{
-        .burger_menu_list {
-            display: none; 
-        }
-    }
-}
-
 @media (max-width: 1100px) {
     .homePage_background{
         .desc__container{
@@ -222,7 +212,7 @@
             .benefits_home__container{
                 min-width: 100%;
                 padding: 20px 0px;
-                background-color: #03115F;
+                background-color: #2d3357;
                 .benefits_item{
                         margin: 12px;
                         padding: 0;
@@ -254,8 +244,27 @@
         }
     }
     .header__container{
+        justify-content: space-between !important;
+        width: 100% !important;
+        .logoLink{
+            font-size: calc(6px + 12 * (100vw / 1440));
+            .union_icon{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    width: 90%;
+                }
+            }
+        }
         .nav_link{
-            display: none;
+            .menu{
+                font-size: calc(12px + 2 * (100vw / 1440));
+                margin-right: 0;
+            }
+            .search_lang-bar{
+                display: none; 
+            }
         }
         .burger_menu_list {
             position: fixed !important;
@@ -317,8 +326,35 @@
                 transform: rotate(-45deg);
             }
         }
-        width: 768px;
-        justify-content: space-between;
+    }
+    .contactBlock_wrapper{
+        .contact_bg__container{
+            max-width: 768px;
+        }
+    }
+    .footer__container{
+        .teams{
+            .russian_team{
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .header__container{
+        .logoLink{
+            width: 50%;
+            .logo_container{
+                font-size: calc(12px + 12 * (100vw / 1440));
+                .desc_logo{
+                    font-size: 16px;
+                }
+            }
+        }
+        .nav_link{
+            display: none;
+        }
         .burger_btn{
             cursor: pointer;
             display: block;
@@ -357,36 +393,7 @@
                 left: 0;
                 background-color: #ffffff;
             }
-        }  
-    }
-    .contactBlock_wrapper{
-        .contact_bg__container{
-            max-width: 768px;
-        }
-    }
-    .footer__container{
-        .teams{
-            .russian_team{
-                margin-right: 30px;
-            }
-        }
-    }
-}
-
-@media (max-width: 768px){
-    .header__container{
-        .search_lang-bar{
-            display: none;
-        }
-        .logoLink{
-            width: 50%;
-            .logo_container{
-                font-size: calc(12px + 12 * (100vw / 1440));
-                .desc_logo{
-                    font-size: 16px;
-                }
-            }
-        }
+        } 
         .burger_btn .burger_menu_list{
             min-height: 100vh;
             width: 100%;
@@ -404,9 +411,7 @@
             height: 100vh !important;
             top: 0;
             .burgers_nav_link{
-                a{
-                    margin-bottom: 46px;
-                }
+                height: 100%;
             }
             .close_container{
                 max-width: 95%;
@@ -455,8 +460,6 @@
                 min-width: auto;
                 padding: 20px;
                 margin: 12px;
-                .img_benefits{
-                }
                 li:nth-child(3){
                     text-align: left;    
                 }
@@ -593,7 +596,12 @@
         }
     }
     .inoBlock_Wrapper{
+        display: flex;
+        justify-content: center;
+        
+        
         .info_block__container{
+
             padding-top: 90px;
             .content{
                 .content_block{
@@ -615,6 +623,9 @@
     }
     .suggestions_block__container{
         margin-top: 90px;
+        .desc_suggesions{
+            padding: 10px;
+        }
         .suggestions_content {
             justify-content: space-between;
             .suggestions {
@@ -652,27 +663,72 @@
         }
     } 
     .portfolio__container {
+        width: 100%;
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;
+        
         .portfolioDesc_content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-sizing: border-box;
             height: 840px;
             padding-bottom: 0px;
+            height: auto;
+            li{
+                padding: 10px;
+                font-size: 16px;
+            }
+        }
+        .portfolio_content{
+            top: 0;
         }
     }
+    .contact_Do{
+        max-width: 100% !important;
+    }
     .square_contactDo{
-        input{
-            width: 100%;
+        p:nth-child(2){
+            width: auto !important;
+        }
+        .input_container{
+            padding: 10px;
+            width: auto !important;
+            width: 80% !important;
+            // width: 200px !important;
+        }
+        .button_container{
+            li{
+                width: 80% !important;
+            }
+            button{
+                width: 80% !important;
+            }
         }
     } 
     .footer__container{
         .teams{
             display: flex;
             flex-direction: column;
+            justify-content: center !important;
+            width: 100% !important;
+            padding: 10px;
         }
         .conf_political{
             display: flex;
             flex-direction: column !important;
+            width: 100% !important;
+            justify-content: center !important;
+            
             ul{
+                margin-right: 0 !important;
+                display: flex !important;
                 margin-bottom: 50px;
                 a{
+                    text-align: center !important;
                     font-size: 20px !important;
                 }
                 width: 100% !important;  
@@ -692,6 +748,13 @@
             }
         }
     }
+    .benefits_Wrapper{
+        padding-bottom: 140px;
+        .benefits__container{
+            padding: 10px;
+            
+        }
+    }
     .content_wrapper {
         .contactBlock_content{
             max-width: 100%;
@@ -699,9 +762,6 @@
                 .contact_Do{
                     max-width: 100%;
                     .square_contactDo{
-                        .square{
-                            
-                        }
                         max-width: none;
                         p:first-child{
                             display: none;
@@ -724,7 +784,6 @@
                             }
                         }
                         .input_container{
-                           
                             width: 100%;
                             label {
                                 width: 90%;
@@ -739,9 +798,41 @@
                 .square_content{
                     width: 100% !important;
                     .square{
-
+                        .social{
+                            
+                            .social_item{
+                                
+                            }
+                        }
                     }
                 }
+        }
+    }
+}
+
+@media (orientation:landscape){
+    .header__container{
+        .burger_menu_list.modal{
+            .burgers_nav_link{
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 100%;
+                a:last-child{
+                    margin-right: 20px;
+                }
+                a{
+                    width: 100%;
+                    margin: 0;
+                    padding: 20px;
+                    width: 30%;
+                    margin-right: 20px;
+                    max-height: 20px;
+                }
+            }
+            .close_container{
+                margin-bottom: 0;
+            }
         }
     }
 }

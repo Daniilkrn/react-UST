@@ -1,4 +1,3 @@
-
 const HomePage = () => {
     return (
         <div className="homePage">
@@ -6,6 +5,5 @@ const HomePage = () => {
         </div>
     )
 } 
-
 
 export default HomePage

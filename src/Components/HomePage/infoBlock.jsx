@@ -1,4 +1,5 @@
 import svgUnion from '../../images/unsplash_VBNb52J8Trk.svg'
+
 const InfoBlock = () => {
     return (
         <div className="inoBlock_Wrapper">

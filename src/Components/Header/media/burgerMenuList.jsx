@@ -1,9 +1,9 @@
 
-import { useState, Link} from "react";
+import { useState} from "react";
+import { Link } from "react-router-dom";
 import Close from "../../Helpers/close";
 
-const BurgerMenuList = ({visibleBurger,setVisibleMenu, ref}) => {
-    console.log(ref);
+const BurgerMenuList = ({visibleBurger,setVisibleMenu}) => {
     const [itemsMenu, ] = useState([       
         {value: 'Главная', linkTo: '/',id:1},
         {value: 'Команда', linkTo: '/team',id:2},
@@ -13,6 +13,11 @@ const BurgerMenuList = ({visibleBurger,setVisibleMenu, ref}) => {
         {value: 'Контакты', linkTo: '/contacts',id:6},
     ])
 
+    function handleSetVisibleMenu (){
+        setVisibleMenu(!visibleBurger)
+        window.scrollTo(0,0)
+    }
+
     return (
         <div className={visibleBurger ? "burger_menu_list modal" : "burger_menu_list"} onClick={(e)=>e.stopPropagation()}>
             <div className="close_container">
@@ -20,7 +25,7 @@ const BurgerMenuList = ({visibleBurger,setVisibleMenu, ref}) => {
             </div>     
             <div className="burgers_nav_link">
                 {
-                    itemsMenu.map(item => <a className="link" key={item.id} href={item.linkTo}>{item.value}</a>)
+                    itemsMenu.map(item => <Link className="link" to={item.linkTo} key={item.id} onClick={()=>handleSetVisibleMenu()}>{item.value}</Link>)
                 }
             </div>
         </div>

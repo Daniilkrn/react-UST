@@ -11,28 +11,11 @@ import Contacts from './Components/Contacts/contacts';
 import Portfolio from './Components/Portfolio/portfolio';
 import Career from './Components/Career/Career';
 import NotFoundPage from './Components/NFP/notFoundPage';
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 
 function App() {
 
   const menuRef = useRef(null)
-
-  // const isScrollingEnabled = true
-
-  // function scrollingFn (e){
-  //   if(isScrollingEnabled) return;
-
-  //   e.preventDefault()
-  // }
-
-  // useEffect(()=>{
-  //   const contentWrapper = menuRef.current
-
-  //   contentWrapper.addEventListener('wheel',scrollingFn)
-
-  //   return () => contentWrapper.removeEventListener('wheel',scrollingFn)
-
-  // })
 
   return (
     <div className="App" ref={menuRef}>

@@ -3,7 +3,6 @@ import picPortfolio2 from '../../images/picPortfolio2.svg'
 import picPortfolio3 from '../../images/picPortfolio3.svg'
 import picPortfolio4 from '../../images/picPortfolio4.svg'
 import picPortfolio5 from '../../images/picPortfolio5.svg'
-// import picPortfolio6 from '../../images/picPortfolio6.svg'
 import picPortfolio21 from '../../images/picPortfolio21.svg'
 
 const PortfolioContent = () => {

@@ -1,4 +1,3 @@
-
 const Serv = () => {
     return (
         <div className="services">
@@ -6,6 +5,5 @@ const Serv = () => {
         </div>
     )
 } 
-
 
 export default Serv

@@ -1,12 +1,8 @@
-import suggItem1 from '../../images/Vector.svg'
 import suggItem2 from'../../images/Vector2.svg'
-import suggItem3 from'../../images/Vector3.svg'
 import suggItem4 from'../../images/Vector4.svg'
 import suggItem5 from'../../images/Vector5.svg'
 import suggItem6 from '../../images/icon6.svg'
 import linkArrow from '../../images/Arrow1.svg'
-
-
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 

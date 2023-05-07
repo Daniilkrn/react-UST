@@ -6,6 +6,7 @@ import Benefits from './benefits'
 import Clients from './clients'
 import ContactBlock from './ContactBlock/contactBlock'
 import BgContactBlock from './ContactBlock/bgContactBlock'
+
 const HomePage = () => {
     return (
         <div className="homePage_wrapper">

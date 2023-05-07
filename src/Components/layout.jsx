@@ -5,13 +5,9 @@ import {MdOutlineLanguage} from 'react-icons/md'
 import svgUnion from '../images/ImageUnion.svg'
 import BurgerMenu from "./Header/media/burgerMenu";
 import { useState } from "react";
-import BurgerMenuList from "./Header/media/burgerMenuList";
 
 const Layout = () => {
-   
-    // const [visibleLinks, setVisibleLinks] = useState(true)
 
-    // const displayRef  = useRef()
     const [itemsMenuDesktop, ] = useState([       
         {value: 'Главная', linkTo: '/',id:1},
         {value: 'Команда', linkTo: '/team',id:2},
@@ -25,7 +21,7 @@ const Layout = () => {
         <div className="layout_wrapper">
             <header>
                 <div className="header__container">
-                    <Link to="/services" className="logoLink">
+                    <Link to="/" className="logoLink">
                         <div className="logo_container">
                             <div className="union_icon">
                             <img src={svgUnion} alt="" />
@@ -56,7 +52,6 @@ const Layout = () => {
             </header>
             <main>
                 <Outlet />
-
             </main>
             <footer>
                 <div className="footer__container">
