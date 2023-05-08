@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-UST/static/css/main.1af04370.css",
+    "main.css": "/react-UST/static/css/main.dca6fd09.css",
     "main.js": "/react-UST/static/js/main.f5863f9d.js",
     "static/js/787.2f52feb3.chunk.js": "/react-UST/static/js/787.2f52feb3.chunk.js",
     "static/media/picPortfolio21.svg": "/react-UST/static/media/picPortfolio21.a355b9f066c462f325dcda4e2c588c7c.svg",
@@ -33,12 +33,12 @@
     "index.html": "/react-UST/index.html",
     "static/media/Arrow1.svg": "/react-UST/static/media/Arrow1.cf0a3a363ba3e3ab58d8df700620f4c1.svg",
     "static/media/rsocial3.svg": "/react-UST/static/media/rsocial3.fc11738b789fc0240a6487c8c052ff97.svg",
-    "main.1af04370.css.map": "/react-UST/static/css/main.1af04370.css.map",
+    "main.dca6fd09.css.map": "/react-UST/static/css/main.dca6fd09.css.map",
     "main.f5863f9d.js.map": "/react-UST/static/js/main.f5863f9d.js.map",
     "787.2f52feb3.chunk.js.map": "/react-UST/static/js/787.2f52feb3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1af04370.css",
+    "static/css/main.dca6fd09.css",
     "static/js/main.f5863f9d.js"
   ]
 }
