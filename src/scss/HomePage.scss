@@ -566,15 +566,19 @@
                 font-size: 26px;
                 line-height: 32px;
                 color: #EEEFF1;
+                text-align: left;
             }
             li:last-child{
+                margin-top: 14px;
+                width: 100%;
+                text-align: left;
                 padding-bottom: 40px;
                 text-align: left;
-                width: 100%;
+                font-style: normal;
                 font-weight: 700;
-                font-size: 62px;
-                line-height: 68px;
-                color: #EEEFF1;
+                font-size: 30px;
+                line-height: 32px;
+                color: #E6E8EF;
             }
     }
 }

@@ -78,7 +78,7 @@ const Layout = () => {
                             <div className="search_lang-bar">
                                 <MdOutlineLanguage size={32} color="#989AA9" className="language"/>
                                 <span className="span-search_lang-bar"></span>
-                                <BsSearch size={26} color="#989AA9" cla1ssName="search"/>
+                                <BsSearch size={26} color="#989AA9" className="search"/>
                             </div>
                     </div>
                     <BurgerMenu/>

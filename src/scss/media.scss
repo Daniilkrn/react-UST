@@ -556,6 +556,9 @@
     }
 }
 @media (max-width: 560px) {
+    .homePage_background{
+        background: url(../images/bgplanet_background.svg) no-repeat;
+    }
     .header__container{
         .logoLink{
             width: 75% !important;
@@ -566,6 +569,11 @@
                 }
             }
         }
+    }
+    .contactBlock_wrapper{
+        position: static !important;
+        background-size: cover !important;
+        padding-bottom: 60px;
     }
     .homePage_background{
         .desc__container{
@@ -822,6 +830,13 @@
                 text-align: center;
                 justify-content: center;
                 align-self: center;
+            }
+            li:first-child{
+                width: 100%;
+                text-align: left !important;
+            }
+            li:last-child{
+                margin-top: 20px;
             }
         }
     }

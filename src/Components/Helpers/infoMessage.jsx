@@ -1,7 +1,5 @@
 import React from "react"
-
 import { RiErrorWarningLine } from "react-icons/ri"
-
 
 const InfoMessage = ({text}) => {
     return (
