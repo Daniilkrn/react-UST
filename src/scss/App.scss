@@ -239,7 +239,6 @@ footer {
                     font-family: 'Roboto';
                 }
                 .li_team:first-child {
-                   
                     font-style: normal;
                     font-weight: 700;
                     font-size: 16px;
@@ -250,14 +249,15 @@ footer {
                 .li_team {
                     white-space:nowrap;
                 }
-    
                 .li_team:last-child {
                     margin-top: 72px;
                 }
-    
             .slovak_team{
                 margin-top: 64px;
                 text-align: left;
+                .li_team:last-child {
+                    margin-top: 16px;
+                }
             }
         }
         .conf_political {
@@ -319,6 +319,9 @@ footer {
             }
         }  
     }
+    .media_mobile_footer{
+        display: none;
+    }
 }
 
 
@@ -356,4 +359,21 @@ footer {
     flex-direction: column;
     justify-content: center;
     height: 100vh;
+}
+
+.infoMessage{
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+    transition: 1s all;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ca2626;
+    padding: 20px;
+    border-radius: 16px;
+    margin-top: 20px;
+    li{
+        margin-left: 10px;
+    }
 }

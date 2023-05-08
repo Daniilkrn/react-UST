@@ -9,8 +9,8 @@ const Portfolio = () =>{
             <PortfolioDesc/>
             <PortfolioContent/>
             <div className="btn_portfolio__container">
-                    <Link to="/portfolio">Портфолио</Link>
                     <Link to="/portfolio">Закаать проект</Link>
+                    <Link to="/portfolio">Портфолио</Link>
             </div>
         </div>
     )

@@ -5,9 +5,21 @@ import {MdOutlineLanguage} from 'react-icons/md'
 import svgUnion from '../images/ImageUnion.svg'
 import BurgerMenu from "./Header/media/burgerMenu";
 import { useState } from "react";
+import SocialItems from "./HomePage/ContactBlock/socialItems";
+
+import socialSvg1 from "../images/social1.svg"
+import socialSvg2 from "../images/social2.svg"
+import socialSvg3 from "../images/rsocial3.svg"
+import socialSvg4 from "../images/social4.svg"
 
 const Layout = () => {
-
+    const [social,] = useState([
+        {id:1,image: socialSvg1},
+        {id:2,image: socialSvg2},
+        {id:3,image: socialSvg3},
+        {id:4,image: socialSvg4},
+        {id:5,image: socialSvg1}
+    ])
     const [itemsMenuDesktop, ] = useState([       
         {value: 'Главная', linkTo: '/',id:1},
         {value: 'Команда', linkTo: '/team',id:2},
@@ -68,7 +80,7 @@ const Layout = () => {
                                 <li className="li_team">contact@unionsmarttech.ru<br></br>
                                 +421 494 539-852</li>
                                 <li className="li_team">24 Entuziastov street,<br></br>Saint Petersburg, 191 119</li>
-                                <li></li>
+                                
                             </div>
                         </div>
                         <div className="conf_political">
@@ -88,6 +100,15 @@ const Layout = () => {
                                 <Link to='/' className="link">Dribbble</Link>
                                 <Link to='/' className="link">linkedin</Link>
                             </ul>
+                        </div>
+                        <div className="media_mobile_footer">
+                            <div className="social_items">
+                                <SocialItems social={social}/>
+                            </div>
+                            <div className="desc">
+                                <li>Политка конфидециальности</li>
+                                <li>Разработка: студия ЯР</li>
+                            </div>
                         </div>
                 </div>
             </footer>
