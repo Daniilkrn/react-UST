@@ -421,10 +421,6 @@
                 max-width: 95%;
                 padding: 10px;
                 margin-right: 20px;
-                .close{
-                    span{
-                    }
-                }
             }
         }
     }
@@ -843,12 +839,17 @@
             max-width: 100%;
             grid-template-columns: 1fr !important;
                 .contact_Do{
+                    .title{
+                        width: 100%;
+                    }
+                    p{
+                        text-align: center;
+                        background-color: red;
+                        width: 100%;
+                    }
                     max-width: 100%;
                     .square_contactDo{
                         max-width: none;
-                        p:first-child{
-                            display: none;
-                        }
                         .button_container{
                             flex-direction: column-reverse;
                             li{ 
