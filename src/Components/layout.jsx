@@ -4,7 +4,7 @@ import {BsSearch} from 'react-icons/bs'
 import {MdOutlineLanguage} from 'react-icons/md'
 import svgUnion from '../images/ImageUnion.svg'
 import BurgerMenu from "./Header/media/burgerMenu";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import SocialItems from "./HomePage/ContactBlock/socialItems";
 
 import socialSvg1 from "../images/social1.svg"
@@ -29,9 +29,31 @@ const Layout = () => {
         {value: 'Контакты', linkTo: '/contacts',id:6},
     ])
 
+    const [scrollPosition, setScrollPosition] = useState(0);
+    const [headerNonFix,setHeaderNonFix] = useState(true)
+
+
+    const handleScroll = () => {
+        const position = window.pageYOffset;
+        setScrollPosition(position);
+    }
+
+    useEffect(() => {
+        if(scrollPosition >= 100){
+            setHeaderNonFix(false)
+          } else {
+            setHeaderNonFix(true)
+          }
+          window.addEventListener('scroll', handleScroll, { passive: true });
+          return () => {
+              window.removeEventListener('scroll', handleScroll);
+          };
+    }, [scrollPosition])
+    
+
     return (
         <div className="layout_wrapper">
-            <header>
+            <header className={headerNonFix ? "headerFix" : "header"}>
                 <div className="header__container">
                     <Link to="/" className="logoLink">
                         <div className="logo_container">

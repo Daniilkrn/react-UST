@@ -840,19 +840,18 @@
             grid-template-columns: 1fr !important;
                 .contact_Do{
                     .title{
+                        max-width: 360px;
                         display: flex;
                         flex-direction: column;
-                        justify-content: center;
-                        width: 80%;
-                    }
-                    p{
-                        br{
-                            display: none;
+                        p{
+                            display: inline;
+                            br{
+                                display: none;
+                            }
+                            display: inline;
+                            text-align: center;  
                         }
-                        display: inline;
-                        text-align: center;  
                     }
-                    max-width: 100%;
                     .square_contactDo{
                         max-width: none;
                         .button_container{

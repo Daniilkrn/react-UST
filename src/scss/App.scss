@@ -45,8 +45,15 @@ main {
         }    
 }
 
+.headerFix{
+    background-color: black;
+}
+
+.header{
+    background-color: rgb(24, 23, 23);
+}
+
 header {
-    background-color: #000000;
     width: 100%;
     display: flex;
     justify-content: center; 

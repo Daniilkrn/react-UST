@@ -1,8 +1,12 @@
+import BgContactBlock from "../HomePage/ContactBlock/bgContactBlock"
+import ContactBlock from "../HomePage/ContactBlock/contactBlock"
+
 const Contacts = () => {
     return (
-        <div className="contacts_main">
-           Contacts
-        </div>
+        <>
+            <ContactBlock></ContactBlock>
+            <BgContactBlock></BgContactBlock>
+        </>
     )
 } 
 
