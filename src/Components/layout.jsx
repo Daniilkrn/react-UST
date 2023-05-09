@@ -108,13 +108,13 @@ const Layout = () => {
                         <div className="conf_political">
                             <ul>
                                 <Link to='/' className="link">главная</Link>
-                                <Link to='/team' className="link">Команда</Link>
-                                <Link to='/services' className="link">Услуги</Link>
+                                <Link to='team' className="link">Команда</Link>
+                                <Link to='services' className="link">Услуги</Link>
                             </ul>
                             <ul>
-                                <Link to='/career' className="link">Карьера</Link>
-                                <Link to='/portfolio' className="link">Портфолио</Link>
-                                <Link to='/contacts' className="link">Контакты</Link>
+                                <Link to='career' className="link">Карьера</Link>
+                                <Link to='portfolio' className="link">Портфолио</Link>
+                                <Link to='contacts' className="link">Контакты</Link>
                             </ul>
                             <ul>
                                 <Link to='/' className="link">Facebook</Link>

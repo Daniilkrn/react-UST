@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Inter Tight';
+    font-family: 'Inter';
     src: url('../../src/fonts/inter.woff2');
 }
 
@@ -576,6 +576,9 @@
                 }
             }
         }
+    }
+    .burger_menu_list.modal{
+        position: fixed !important;
     }
     .contactBlock_wrapper{
         position: static !important;

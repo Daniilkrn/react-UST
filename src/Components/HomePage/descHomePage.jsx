@@ -9,7 +9,7 @@ const DescHomePage = () => {
                     <li className="blue_li">с продуктовым мышлением</li>
                     <li className="desc_li">Мы создаем кроссплатформенные мобильные <br></br>приложения и веб-платформы и находим для них<br></br> лучшие решения.</li>
                     <div className="btn_home">
-                        <Link to='' className="btn">Заказать проект</Link>
+                        <Link to='contacts' className="btn">Заказать проект</Link>
                     </div>
                 </div>
                 <div className="benefits_home__container">

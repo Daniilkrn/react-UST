@@ -2,6 +2,7 @@ const Close = ({visibleBurger,setVisibleMenu}) => {
     
     function handlerSetMenu(){
         setVisibleMenu(!visibleBurger)
+        document.body.style.overflow = "auto";
     }
 
     return (
