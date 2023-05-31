@@ -21,7 +21,7 @@ const BurgerMenuList = ({visibleBurger,setVisibleMenu}) => {
     return (
         <div className={visibleBurger ? "burger_menu_list modal" : "burger_menu_list"} onClick={(e)=>e.stopPropagation()}>
             <div className="close_container">
-                <Close visibleBurger = {visibleBurger} setVisibleMenu = {setVisibleMenu}></Close>           
+                <Close visibleBurger={visibleBurger} setVisibleMenu={setVisibleMenu}></Close>           
             </div>     
             <div className="burgers_nav_link">
                 {
