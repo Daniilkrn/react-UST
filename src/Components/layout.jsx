@@ -128,7 +128,7 @@ const Layout = () => {
                                 <SocialItems social={social}/>
                             </div>
                             <div className="desc">
-                                <li>Политка конфидециальности</li>
+                                <li>Политика конфидециальности</li>
                                 <li>Разработка: студия ЯР</li>
                             </div>
                         </div>
